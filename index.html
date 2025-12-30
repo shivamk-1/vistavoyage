@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VistaVoyage - Your Smart Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="#home">VistaVoyage</a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#destinations" class="nav__link">Destinations</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#packages" class="nav__link">Experiences</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#testimonials" class="nav__link">Testimonials</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <button class="nav__cta" href=".planner__container" id="plan-trip-btn">Plan Your Trip</button>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title">Your Smart Travel Guide</h1>
+            <p class="hero__subtitle">Discover amazing destinations and create unforgettable memories with personalized travel planning</p>
+            <div class="hero__buttons">
+                <a href="#contact" class="btn btn--primary">Start Planning</a>
+                <a href="#destinations" class="btn btn--secondary">View Top Destinations</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="destinations section" id="destinations">
+        <div class="container">
+            <h2 class="section__title">Featured Destinations</h2>
+            <p class="section__subtitle">Explore the world's most beautiful places</p>
+            <div class="destinations__grid">
+                <article class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop" alt="Santorini, Greece">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Santorini</h3>
+                        <p class="destination-card__country">Greece</p>
+                        <p class="destination-card__description">Stunning sunsets, white-washed buildings, and crystal-clear waters await you in this Mediterranean paradise.</p>
+                        <div class="destination-card__tags">
+                            <span class="tag tag--beach">Beach</span>
+                            <span class="tag tag--heritage">Heritage</span>
+                            <span class="tag tag--romantic">Romantic</span>
+                        </div>
+                        <button class="btn btn--outline">View Details</button>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop" alt="Paris, France">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Paris</h3>
+                        <p class="destination-card__country">France</p>
+                        <p class="destination-card__description">The City of Light offers world-class museums, iconic landmarks, and exquisite cuisine around every corner.</p>
+                        <div class="destination-card__tags">
+                            <span class="tag tag--heritage">Heritage</span>
+                            <span class="tag tag--romantic">Romantic</span>
+                            <span class="tag tag--culture">Culture</span>
+                        </div>
+                        <button class="btn btn--outline">View Details</button>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop" alt="Tokyo, Japan">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Tokyo</h3>
+                        <p class="destination-card__country">Japan</p>
+                        <p class="destination-card__description">Experience the perfect blend of ancient traditions and cutting-edge technology in this vibrant metropolis.</p>
+                        <div class="destination-card__tags">
+                            <span class="tag tag--culture">Culture</span>
+                            <span class="tag tag--adventure">Adventure</span>
+                            <span class="tag tag--modern">Modern</span>
+                        </div>
+                        <button class="btn btn--outline">View Details</button>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&h=600&fit=crop" alt="Bali, Indonesia">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Bali</h3>
+                        <p class="destination-card__country">Indonesia</p>
+                        <p class="destination-card__description">Tropical beaches, lush rice terraces, and rich cultural heritage make Bali a perfect escape.</p>
+                        <div class="destination-card__tags">
+                            <span class="tag tag--beach">Beach</span>
+                            <span class="tag tag--adventure">Adventure</span>
+                            <span class="tag tag--culture">Culture</span>
+                        </div>
+                        <button class="btn btn--outline">View Details</button>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://media.cntraveler.com/photos/5bce196031019f0885f7cbc9/1:1/w_2667,h_2667,c_limit/Machu-Picchu_GettyImages-109401484.jpg" alt="Machu Picchu, Peru">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Machu Picchu</h3>
+                        <p class="destination-card__country">Peru</p>
+                        <p class="destination-card__description">Journey to the ancient Incan citadel nestled high in the Andes Mountains for an unforgettable adventure.</p>
+                        <div class="destination-card__tags">
+                            <span class="tag tag--adventure">Adventure</span>
+                            <span class="tag tag--heritage">Heritage</span>
+                            <span class="tag tag--nature">Nature</span>
+                        </div>
+                        <button class="btn btn--outline">View Details</button>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg" alt="Dubai, UAE">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Dubai</h3>
+                        <p class="destination-card__country">UAE</p>
+                        <p class="destination-card__description">Luxury shopping, stunning architecture, and desert adventures await in this modern Middle Eastern gem.</p>
+                        <div class="destination-card__tags">
+                            <span class="tag tag--luxury">Luxury</span>
+                            <span class="tag tag--modern">Modern</span>
+                            <span class="tag tag--adventure">Adventure</span>
+                        </div>
+                        <button class="btn btn--outline">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="packages section" id="packages">
+        <div class="container">
+            <h2 class="section__title">Travel Experiences</h2>
+            <p class="section__subtitle">Curated packages for every type of traveler</p>
+            <div class="packages__grid">
+                <article class="package-card">
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Weekend Getaway</h3>
+                        <span class="package-card__duration">3 Days / 2 Nights</span>
+                    </div>
+                    <div class="package-card__body">
+                        <p class="package-card__price">From $299</p>
+                        <p class="package-card__description">Perfect for a quick escape. Includes accommodation, breakfast, and guided city tour. Ideal for couples and solo travelers seeking a refreshing break.</p>
+                        <ul class="package-card__highlights">
+                            <li>✓ Comfortable accommodation</li>
+                            <li>✓ Daily breakfast included</li>
+                            <li>✓ City tour with local guide</li>
+                        </ul>
+                        <button class="btn btn--primary package-itinerary-btn" data-package="weekend">See Itinerary</button>
+                    </div>
+                </article>
+
+                <article class="package-card">
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Cultural Explorer</h3>
+                        <span class="package-card__duration">7 Days / 6 Nights</span>
+                    </div>
+                    <div class="package-card__body">
+                        <p class="package-card__price">From $899</p>
+                        <p class="package-card__description">Immerse yourself in local culture with visits to museums, historical sites, traditional markets, and authentic dining experiences.</p>
+                        <ul class="package-card__highlights">
+                            <li>✓ Museum and heritage site visits</li>
+                            <li>✓ Traditional cooking class</li>
+                            <li>✓ Local market tour</li>
+                        </ul>
+                        <button class="btn btn--primary package-itinerary-btn" data-package="cultural">See Itinerary</button>
+                    </div>
+                </article>
+
+                <article class="package-card">
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Backpacker Route</h3>
+                        <span class="package-card__duration">14 Days / 13 Nights</span>
+                    </div>
+                    <div class="package-card__body">
+                        <p class="package-card__price">From $1,299</p>
+                        <p class="package-card__description">Budget-friendly adventure for the free-spirited traveler. Hostel stays, local transport, and flexible itinerary to explore at your own pace.</p>
+                        <ul class="package-card__highlights">
+                            <li>✓ Budget-friendly hostels</li>
+                            <li>✓ Local transport pass</li>
+                            <li>✓ Flexible itinerary</li>
+                        </ul>
+                        <button class="btn btn--primary package-itinerary-btn" data-package="backpacker">See Itinerary</button>
+                    </div>
+                </article>
+
+                <article class="package-card">
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Luxury Escape</h3>
+                        <span class="package-card__duration">5 Days / 4 Nights</span>
+                    </div>
+                    <div class="package-card__body">
+                        <p class="package-card__price">From $2,499</p>
+                        <p class="package-card__description">Indulge in premium accommodations, fine dining, private tours, and exclusive experiences designed for the discerning traveler.</p>
+                        <ul class="package-card__highlights">
+                            <li>✓ 5-star accommodation</li>
+                            <li>✓ Fine dining experiences</li>
+                            <li>✓ Private guided tours</li>
+                        </ul>
+                        <button class="btn btn--primary package-itinerary-btn" data-package="luxury">See Itinerary</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="planner section" id="planner">
+        <div class="container">
+            <h2 class="section__title">Plan Your Trip</h2>
+            <p class="section__subtitle">Get a personalized travel plan in seconds</p>
+            <div class="planner__container">
+                <div class="planner__form">
+                    <div class="form-group">
+                        <label for="planner-destination">Destination</label>
+                        <select id="planner-destination" class="form-control">
+                            <option value="">Select a destination</option>
+                            <option value="santorini">Santorini, Greece</option>
+                            <option value="paris">Paris, France</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="bali">Bali, Indonesia</option>
+                            <option value="machu-picchu">Machu Picchu, Peru</option>
+                            <option value="dubai">Dubai, UAE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="planner-days">Number of Days</label>
+                        <input type="number" id="planner-days" class="form-control" min="1" max="30" placeholder="e.g., 7">
+                    </div>
+                    <div class="form-group">
+                        <label for="planner-type">Trip Type</label>
+                        <select id="planner-type" class="form-control">
+                            <option value="">Select trip type</option>
+                            <option value="relax">Relax</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="budget">Budget</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--primary" id="generate-plan-btn">Generate Plan</button>
+                </div>
+                <div class="planner__result" id="planner-result">
+                    <p class="planner__placeholder">Fill in the form and click "Generate Plan" to see your personalized itinerary and budget estimate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <h2 class="section__title">What Our Travelers Say</h2>
+            <p class="section__subtitle">Real experiences from real travelers</p>
+            <div class="testimonials__grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="testimonial-card__text">"VistaVoyage made planning our honeymoon to Santorini absolutely effortless. Every recommendation was spot-on, and we had the trip of a lifetime!"</p>
+                    <div class="testimonial-card__author">
+                        <strong>Sarah & James</strong>
+                        <span>New York, USA</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="testimonial-card__text">"As a solo traveler, I was nervous about my first international trip. VistaVoyage provided detailed itineraries and local insights that made me feel confident and safe."</p>
+                    <div class="testimonial-card__author">
+                        <strong>Maria Rodriguez</strong>
+                        <span>Toronto, Canada</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>★★★★☆</span>
+                    </div>
+                    <p class="testimonial-card__text">"The budget-friendly package was perfect for our student group. We got to see so much without breaking the bank. Highly recommend!"</p>
+                    <div class="testimonial-card__author">
+                        <strong>Alex Chen</strong>
+                        <span>London, UK</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="testimonial-card__text">"The cultural explorer package exceeded all expectations. We learned so much about local traditions and had authentic experiences we'll never forget."</p>
+                    <div class="testimonial-card__author">
+                        <strong>Emma Thompson</strong>
+                        <span>Sydney, Australia</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section__title">About VistaVoyage</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="about__description">VistaVoyage is your trusted companion in creating unforgettable travel experiences. We believe that every journey should be personalized, memorable, and stress-free.</p>
+                    <p class="about__description">Our mission is to make travel planning accessible to everyone, whether you're a first-time traveler or a seasoned explorer. We combine local insights, budget-friendly options, and personalized recommendations to help you discover the world on your terms.</p>
+                    <h3 class="about__subtitle">What Makes Us Unique</h3>
+                    <ul class="about__features">
+                        <li><strong>Personalized Itineraries:</strong> Every trip is tailored to your preferences, budget, and travel style.</li>
+                        <li><strong>Local Insights:</strong> Get recommendations from locals and hidden gems that aren't in guidebooks.</li>
+                        <li><strong>Budget-Friendly Planning:</strong> We help you maximize your travel experience without breaking the bank.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <p class="section__subtitle">Ready to plan your next adventure? Let's start the conversation!</p>
+            <form class="contact__form" id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name">Name <span class="required">*</span></label>
+                        <input type="text" id="contact-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email <span class="required">*</span></label>
+                        <input type="email" id="contact-email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-destination">Destination</label>
+                        <select id="contact-destination" class="form-control">
+                            <option value="">Select a destination</option>
+                            <option value="santorini">Santorini, Greece</option>
+                            <option value="paris">Paris, France</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="bali">Bali, Indonesia</option>
+                            <option value="machu-picchu">Machu Picchu, Peru</option>
+                            <option value="dubai">Dubai, UAE</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-trip-type">Trip Type</label>
+                        <select id="contact-trip-type" class="form-control">
+                            <option value="">Select trip type</option>
+                            <option value="relax">Relax</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="budget">Budget</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-date-start">Travel Start Date</label>
+                        <input type="date" id="contact-date-start" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-date-end">Travel End Date</label>
+                        <input type="date" id="contact-date-end" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message <span class="required">*</span></label>
+                    <textarea id="contact-message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--large">Send Message</button>
+                <div class="form-message" id="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">VistaVoyage</h3>
+                    <p class="footer__text">Your smart travel guide for unforgettable journeys around the world.</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Experiences</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Follow Us</h4>
+                    <ul class="footer__social">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 VistaVoyage. All rights reserved.</p>
+                <p class="footer__note">This is a student project demo.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    
+    <div class="modal" id="itinerary-modal">
+        <div class="modal__content">
+            <span class="modal__close" id="modal-close">&times;</span>
+            <h2 class="modal__title" id="modal-title">Package Itinerary</h2>
+            <div class="modal__body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
